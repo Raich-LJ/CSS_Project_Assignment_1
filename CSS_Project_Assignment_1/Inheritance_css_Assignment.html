@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance CSS</title>
+    <style>
+      * {
+        margin: auto;
+        font-style: italic;
+      }
+      .like {
+        color: brown;
+      }
+      .dislike {
+        color: purple;
+      }
+      #food {
+        color: green;
+      }
+      #hair {
+        color: gold;
+      }
+      #movie {
+        color: blue;
+      }
+      #activity {
+        color: darkcyan;
+      }
+      #animal {
+        color: darkred;
+      }
+    </style>
+  </head>
+  <!-- TASK 
+    Create an ordered and unordered list of your likes and dislikes.
+    Give class names and id names to both parent tags and children tags. 
+    Give stylings to them using both their class names and id to understand specificity as well as an inheritance on stylings. -->
+
+  <!-- SOLUTION 
+    I made the parent to be the ul and ol tags and styled them with specific colors. 
+    I noticed identified all the children (li tags) under each list adopted the style of the parent.
+    To make a distinction and adopt specificity, I created a style group for related likes and dislikes so they could adapt same style but still unique to their partents.
+    However, I noticed the bullet points and the numbers still had the same colour as the parent.-->
+  <body>
+    <h1>Rachael Likes</h1>
+    <ul class="like" ; id="like">
+      <li>
+        <span class="food" ; id="food">Chinese Food</span>
+      </li>
+      <li>
+        <span class="hair" ; id="hair">4C Natural Hair</span>
+      </li>
+      <li>
+        <span class="food" ; id="food">Candy</span>
+      </li>
+      <li>
+        <span class="movie" ; id="movie">Action Movies</span>
+      </li>
+      <li>
+        <span class="activity" ; id="activity">Coding</span>
+      </li>
+    </ul>
+
+    <h1>Rachael Dislikes</h1>
+    <ol class="dislike" ; id="dislike">
+      <li>
+        <span class="food" ; id="food">Snail</span>
+      </li>
+      <li>
+        <span class="animal" ; id="animal">Rats</span>
+      </li>
+      <li>
+        <span class="activity" ; id="activity">Too much excersise</span>
+      </li>
+      <li>
+        <span class="food" ; id="food">Salty Food</span>
+      </li>
+      <li>
+        <span class="movie" ; id="movie">Drama Movies</span>
+      </li>
+    </ol>
+  </body>
+</html>
